@@ -17,3 +17,8 @@ const PizzaSchema = new Schema({
     },
     toppings: []
 });
+
+// create the Pizza model using the PizzaSchema
+const Pizza = model('Pizza', PizzaSchema);
+
+model.exports = Pizza;
