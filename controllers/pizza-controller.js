@@ -1,4 +1,4 @@
-const { json } = require('express/lib/response');
+// const { json } = require('express/lib/response');
 const { Pizza } = require('../models');
 
 const pizzaController = {
