@@ -1,4 +1,4 @@
-const { Comment, Pizza, Pizza } = require('../models');
+const { Comment, Pizza } = require('../models');
 const { db } = require('../models/Pizza');
 
 const commentController = {
