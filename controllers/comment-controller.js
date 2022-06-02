@@ -1,5 +1,5 @@
 const { Comment, Pizza } = require('../models');
-const { db } = require('../models/Pizza');
+// const { db } = require('../models/Pizza');
 
 const commentController = {
     // add comment to pizza
@@ -31,7 +31,7 @@ const commentController = {
         )
         .then(dbPizzaData => {
             if(!dbPizzaData) {
-                res.status(404).json({ message: 'No pizza found wiht this id!' });
+                res.status(404).json({ message: 'No pizza found with this id!' });
                 return;
             }
             res.json(dbPizzaData);
