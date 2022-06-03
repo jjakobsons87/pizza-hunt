@@ -153,13 +153,11 @@ function handleNewCommentSubmit(event) {
 
 function handleNewReplySubmit(event) {
   event.preventDefault();
-
   if (!event.target.matches(".reply-form")) {
     return false;
   }
 
   const commentId = event.target.getAttribute("data-commentid");
-
   const writtenBy = event.target.querySelector("[name=reply-name]").value;
   const replyBody = event.target.querySelector("[name=reply]").value;
 
